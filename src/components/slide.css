@@ -1,0 +1,75 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+
+}
+
+.wrapper {
+  border-radius: 5px;
+  width: 100%;
+  height: 100%;
+  background: rgb(255, 255, 255);
+  position: relative;
+}
+
+.top-section {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 10px; /* Adjust spacing between top and bottom sections */
+}
+
+.bottom-section {
+  display: flex;
+  justify-content: center;
+}
+
+.resizeable-box {
+  position: relative;
+  border: 2px solid rgb(0, 0, 0);
+  width: 200px;
+  height: 200px;
+  border-radius: 3px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-width: 15px;
+  min-height: 15px;
+}
+
+.resizer {
+  position: absolute;
+  background: rgb(154, 241, 234);
+}
+
+.rr {
+  cursor: col-resize;
+  height: 100%;
+  right: 0;
+  top: 0;
+  width: 5px;
+}
+
+.rt {
+  cursor: row-resize;
+  height: 5px;
+  left: 0;
+  top: 0;
+  width: 100%;
+}
+
+.rb {
+  cursor: row-resize;
+  height: 5px;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+}
+
+.rl {
+  cursor: col-resize;
+  height: 100%;
+  left: 0;
+  top: 0;
+  width: 5px;
+}
